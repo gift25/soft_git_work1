@@ -6,9 +6,9 @@ GAME_HEIGHT = 700
 SPEED = 100
 SPACE_SIZE = 50
 BODY_PARTS = 3
-SNAKE_COLOR = "#00FF00"
-FOOD_COLOR = "#FF0000"
-BACKGROUND_COLOR = "#000000"
+SNAKE_COLOR = "#CC0099"
+FOOD_COLOR = "#9900CC"
+BACKGROUND_COLOR = "#FFFFFF"
 
 
 class Snake:
@@ -122,7 +122,7 @@ def game_over():
 
     canvas.delete(ALL)
     canvas.create_text(canvas.winfo_width()/2, canvas.winfo_height()/2,
-                       font=('consolas',70), text="GAME OVER", fill="red", tag="gameover")
+                       font=('consolas',70), text="GAME OVER", fill="#FF6600", tag="gameover")
 
 
 window = Tk()
